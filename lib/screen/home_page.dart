@@ -51,7 +51,7 @@ class _HomePageState extends State<HomePage> {
                   children:  [
                     ProductCard(
                       image:'assets/images/coffe1.jpg',
-                      title: 'capucino',
+                      title: 'Cappucino',
                       review: "4.9",
                     ),
                         ProductCard(

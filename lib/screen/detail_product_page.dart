@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kopi/component/item_order.dart';
-import 'package:kopi/component/primary_button.dart';
 import 'package:kopi/component/size_card_order.dart';
+import 'package:awesome_dialog/awesome_dialog.dart';
+
 
 class DetailProductPage extends StatelessWidget {
      DetailProductPage({super.key});
@@ -57,7 +58,7 @@ class DetailProductPage extends StatelessWidget {
                
                 ),
                     const SizedBox(height: 10),
-                   Text("Capucino", 
+                   Text("Cappucino", 
                    style: GoogleFonts.dmSans(
                     fontWeight: FontWeight.bold,
                     color:  const Color(0xff1e2843),
@@ -67,7 +68,7 @@ class DetailProductPage extends StatelessWidget {
                     const SizedBox(height:5),
                     SizedBox(
                       width: 245,
-                      child: Text('it has survived not only five centuries , but also the leap into electronic typesetting, remaining essentially unchanged.',
+                      child: Text('Cappucino made from selected Robusta coffee.',
                       style: GoogleFonts.dmSans(
                       fontSize: 13,
                       fontWeight: FontWeight.w500,
@@ -111,7 +112,7 @@ class DetailProductPage extends StatelessWidget {
                         color: Color(0xffa1a6b3),
                       ),
                       ),
-                      Text("\$7.2",
+                      Text("Rp.30000",
                          style: GoogleFonts.roboto(
                         fontWeight: FontWeight.bold,
                         color:  const Color(0xff1e2843),
@@ -120,7 +121,33 @@ class DetailProductPage extends StatelessWidget {
                     ],
                   ),
                   SizedBox(height: 30),
-                  WCprimaryButton(title: "pleace Order", onPressed: (){})
+                  
+                        AnimatedButton(
+                  text: 'Place Order',
+                  color: Color.fromARGB(255, 0, 0, 0),
+                  pressEvent: () {
+                    AwesomeDialog(
+                      context: context,
+                      animType: AnimType.leftSlide,
+                      headerAnimationLoop: false,
+                      dialogType: DialogType.success,
+                      showCloseIcon: false,
+                      title: 'Succes',
+                      desc:
+                          'Your order will be placed soon',
+                      btnOkOnPress: () {
+                        debugPrint('OnClcik');
+                      },
+                      btnOkIcon: Icons.check_circle,
+                      onDismissCallback: (type) {
+                        debugPrint('Dialog Dissmiss from callback $type');
+                      },
+                    ).show();
+
+                  },
+                ),
+                   
+                
                   
                  
               ],

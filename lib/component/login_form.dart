@@ -30,7 +30,7 @@ class WCLoginForm extends StatelessWidget {
         ),
         const SizedBox(height: 3),
         Text(
-          "  sign in to continue",
+          "  Sign in to continue",
           textAlign: TextAlign.center,
           style: GoogleFonts.dmSans(
             fontWeight: FontWeight.w500,
@@ -49,7 +49,7 @@ class WCLoginForm extends StatelessWidget {
         const CostomFormField(hintText: "Username or Email", suffixIcon: Icon(Icons.email),
         ),
         const SizedBox(height: 28),
-        const CostomFormField(hintText: "password", suffixIcon: Icon(Icons.lock),
+        const CostomFormField(hintText: "Password", suffixIcon: Icon(Icons.lock),
         obscureText: true,
         ),
         const SizedBox(height: 18),

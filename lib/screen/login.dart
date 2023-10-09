@@ -36,7 +36,7 @@ class WCLoginPage extends StatelessWidget {
                     Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                    Text("Don't Have an account?", 
+                    Text("Don't have an account?", 
                     style: GoogleFonts.roboto(fontWeight: FontWeight.w500,
                       color:  Color(0XFFA1a6B3),
                       ),

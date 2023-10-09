@@ -25,7 +25,7 @@ class SizeCart extends StatelessWidget {
                        children: [
                          const DetailOrderProductButton(text: 'S'),
                          const SizedBox(height: 6),
-                         Text("\$2.6",
+                         Text("20K",
                          style: GoogleFonts.roboto(
                           fontWeight: FontWeight.w500,
                           color: const Color(0xffa1a6b3),
@@ -38,7 +38,7 @@ class SizeCart extends StatelessWidget {
                        children: [
                          const DetailOrderProductButton(text: 'M'),
                          const SizedBox(height: 6),
-                         Text("\$3.0",
+                         Text("25K",
                          style: GoogleFonts.roboto(
                           fontWeight: FontWeight.w500,
                           color: const Color(0xffa1a6b3),
@@ -51,7 +51,7 @@ class SizeCart extends StatelessWidget {
                        children: [
                          const DetailOrderProductButton(text: 'L'),
                          const SizedBox(height: 6),
-                         Text("\$3.5",
+                         Text("30K",
                          style: GoogleFonts.roboto(
                           fontWeight: FontWeight.w500,
                           color: const Color(0xffa1a6b3),

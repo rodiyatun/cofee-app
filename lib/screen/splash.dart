@@ -28,7 +28,7 @@ class SplashPage extends StatelessWidget {
                ),
                const SizedBox(height: 12),
                
-                  Text(" Dibuat oleh Barista Profesional , banyak macam Coffe dan Soft Drink ", textAlign: TextAlign.center, style: GoogleFonts.roboto(
+                  Text(" Made by professional baristas, many kinds of coffee and snack ", textAlign: TextAlign.center, style: GoogleFonts.roboto(
                     
                     fontSize: 16,
                     fontWeight: FontWeight.w400,
